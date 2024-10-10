@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'rake'
+
+group :development, :test do
+  gem 'benchmark-ips'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rake'
+  gem 'rubocop-rspec'
+  gem 'ruby-lsp'
+  gem 'solargraph'
+end
