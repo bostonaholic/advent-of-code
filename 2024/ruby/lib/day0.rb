@@ -3,6 +3,6 @@
 # Day0 solution
 class Day0
   def solve
-    'solved'
+    "solved"
   end
 end

@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require 'rspec/core/rake_task'
-require 'rubocop/rake_task'
+require "rspec/core/rake_task"
+require "rubocop/rake_task"
 
 RSpec::Core::RakeTask.new(:spec)
 RuboCop::RakeTask.new
 
 task default: %i[rubocop spec]
 
-desc 'Run the solution for a specific day'
+desc "Run the solution for a specific day"
 task :solve, [:day] do |_, args|
   day_class_file = "lib/day#{args[:day]}"
   require_relative day_class_file
